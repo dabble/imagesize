@@ -39,9 +39,9 @@ class ImageSize
   # argument 2 is type(ImageSize::Type::GIF and so on.) or nil
   def initialize(img_data, img_type = nil)
     @img_data = img_data.dup
-    @img_wedth = nil
+    @img_width  = nil
     @img_height = nil
-    @img_type = nil
+    @img_type   = nil
 
     if @img_data.is_a?(IO)
       img_top = @img_data.read(1024)
