@@ -4,7 +4,7 @@ class TestImageSize < Test::Unit::TestCase
 
 	def setup
 		@files = ['4_1_2.gif', '2-4-7.png', 'tokyo_tower.jpg', 'bmp.bmp', 
-		          'ppm.ppm', 'pgm.pgm', 'pbm.pbm', 
+		          'pgm.pgm', 'pbm.pbm', 
 		          'cursor.xbm', 'tiff.tiff', 'test.xpm', 
 		          'tower_e.gif.psd', 'pcx.pcx', 'detect.swf']
 		@results = [
@@ -12,7 +12,6 @@ class TestImageSize < Test::Unit::TestCase
 		  ['PNG' ,640,532],
 		  ['JPEG',320,240],
 		  ['BMP' , 50, 50],
-		  ['PPM' , 80, 50],
 		  ['PGM' , 90, 55],
 		  ['PBM' , 85, 55],
 		  ['XBM' , 16, 16],
