@@ -3,7 +3,8 @@ require File.dirname(__FILE__) + '/test_helper.rb'
 class TestImageSize < Test::Unit::TestCase
 
 	def setup
-		@files = ['4_1_2.gif', '2-4-7.png', 'tokyo_tower.jpg', 'bmp.bmp', 
+		@files = ['4_1_2.gif', '2-4-7.png', 'tokyo_tower.jpg', 
+			  'digitaldutch_comment.jpg', 'bmp.bmp', 
 		          'pgm.pgm', 'pbm.pbm', 
 		          'cursor.xbm', 'tiff.tiff', 'test.xpm', 
 		          'tower_e.gif.psd', 'pcx.pcx', 'detect.swf']
@@ -11,6 +12,7 @@ class TestImageSize < Test::Unit::TestCase
 		  ['GIF' ,668,481],
 		  ['PNG' ,640,532],
 		  ['JPEG',320,240],
+		  ['JPEG',800,600],
 		  ['BMP' , 50, 50],
 		  ['PGM' , 90, 55],
 		  ['PBM' , 85, 55],

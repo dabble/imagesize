@@ -159,7 +159,18 @@ class ImageSize
         height, width = img_io.read_o(5).unpack('xnn')
         return([width, height])
       end
+
       img_io.read_o(length - 2)
+      # comment length can be wrong
+      if (code == "\xfe")
+        2.times do
+          char = img_io.getc()
+          if (char == 0xff)
+            img_io.ungetc(char)
+            break
+          end
+        end
+      end
     end
   end
 
