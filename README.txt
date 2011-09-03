@@ -7,7 +7,7 @@ measure image (GIF, PNG, JPEG ,,, etc) size code by Pure Ruby
 
 The latest version of image_size can be found at
 
-* http://rubyforge.org/projects/imagesize
+* http://rubyforge.org/frs/?group_id=3460
 
 == Installation
 

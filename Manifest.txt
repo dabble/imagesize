@@ -1,10 +1,7 @@
-History.txt
 Manifest.txt
 README.txt
-Rakefile
 lib/image_size.rb
 lib/image_size/version.rb
-scripts/txt2html
 setup.rb
 test/test_helper.rb
 test/test_image_size.rb

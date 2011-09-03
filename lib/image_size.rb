@@ -35,7 +35,8 @@ class ImageSize
   end
 
   # receive image & make size
-  # argument is image String, StringIO or IO
+  # argument 1 is image String, StringIO or IO
+  # argument 2 is type(ImageSize::Type::GIF and so on.) or nil
   def initialize(img_data, img_type = nil)
     @img_data = img_data.dup
     @img_wedth = nil
@@ -85,12 +86,12 @@ class ImageSize
     if @img_type == Type::OTHER then nil else @img_height end
   end
   
-  # get image height
+  # get image width
   def get_width
     if @img_type == Type::OTHER then nil else @img_width end
   end
   
-  # get image wight and height(Array)
+  # get image width and height(Array)
   def get_size
     [self.get_width, self.get_height]
   end
