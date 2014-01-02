@@ -215,7 +215,7 @@ class ImageSize
   end
 
   def measure_PSD(img_io)
-    img_io.read_o(26).unpack("x14NN")
+    img_io.read_o(26).unpack("x14NN").reverse
   end
 
   def measure_TIFF(img_io)
